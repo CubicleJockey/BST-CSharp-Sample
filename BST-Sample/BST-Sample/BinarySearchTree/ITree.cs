@@ -1,13 +1,14 @@
 ﻿namespace BST_Sample.BinarySearchTree
 {
-    public interface ITree<T>
+    public interface ITree
     {
-        bool Add(T value);
-        Node<T> Find(T value);
-        void Remove(T value);
+        int NodeCount { get; }
+        bool Add(int value);
+        Node Find(int value);
+        void Remove(int value);
         int GetTreeDepth();
-        void TraversePreOrder(Node<T> parent);
-        void TraverseInOrder(Node<T> parent);
-        void TraversePostOrder(Node<T> parent);
+        void TraversePreOrder(Node parent);
+        void TraverseInOrder(Node parent);
+        void TraversePostOrder(Node parent);
     }
 }

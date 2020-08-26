@@ -1,11 +1,9 @@
-﻿using System.Net.NetworkInformation;
-
-namespace BST_Sample.BinarySearchTree
+﻿namespace BST_Sample.BinarySearchTree
 {
-    public class Node<T>
+    public class Node
     {
-        public T Data { get; set; }
-        public Node<T> Left { get; set; }
-        public Node<T> Right { get; set; }
+        public int Data { get; set; }
+        public Node Left { get; set; }
+        public Node Right { get; set; }
     }
 }
